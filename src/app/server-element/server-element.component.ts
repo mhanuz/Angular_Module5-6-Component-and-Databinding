@@ -10,7 +10,7 @@ import { Component, OnInit,Input,ViewEncapsulation } from '@angular/core';
 export class ServerElementComponent implements OnInit {
   // bydefault all properties are accessible component itself, not other components
   // using decorators, it tells the component allow acces properties from Parent component
-  @Input('servElement') element : { // servElement: property binding alias
+  @Input('servElementToSE') element : { // servElement: property binding alias
     name: string;
     type: string;
     content: string;
