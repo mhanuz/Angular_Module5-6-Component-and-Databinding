@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
-
+// EventEmiter: to make custom event 
 @Component({
   selector: 'app-cokpit',
   templateUrl: './cokpit.component.html',
@@ -14,7 +14,9 @@ export class CokpitComponent implements OnInit {
   
   // newServerName = '';
   // newServerContent = '';
-
+  
+// ViewChild: allow access native dom element through their local reference variable
+// ElementRef: direct access the dom element 
  @ViewChild('serverContentInput') serverContentInput: ElementRef;
  @ViewChild('serverNameInput')serverNameInput: ElementRef;
 
