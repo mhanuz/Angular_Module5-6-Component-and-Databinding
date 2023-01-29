@@ -1,0 +1,21 @@
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Add new Servers or blueprints!</p>
+      <label>Server Name</label>
+       <!-- local reference can be used any HTML element -->
+      <input type="text" 
+      class="form-control"
+       #serverNameInput>
+       <!-- this reference will hold the reference to the element -->
+      <label>Server Content</label>
+      <input type="text" class="form-control"
+       #serverContentInput>
+      <br>
+      <button
+        class="btn btn-primary"
+        (click)="onAddServer(serverNameInput)">Add Server</button>
+      <button
+        class="btn btn-primary"
+        (click)="onAddBlueprint(serverContentInput)">Add Server Blueprint</button>
+    </div>
+  </div>
